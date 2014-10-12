@@ -39,8 +39,12 @@
 --on customers.city = agents.city
 --where customers.city = agents.city
 
-
---#7 stapped me in the face a few times and told me to go cry in a corner. 
+--select customers.name as "Customer Name", customers.city as "Customer City"
+--from customers, products 
+--where customers.city = products.city and products.quantity = (
+--select min(quantity)
+--from products, customers 
+--where customers.city = products.city)
 
 
 
